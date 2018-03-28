@@ -18,21 +18,4 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://namtonjaa.github.io/')
-
-WebUI.click(findTestObject('Page_Registeration System (9)/input'))
-
-WebUI.click(findTestObject('Page_Student Login (9)/input'))
-
-WebUI.click(findTestObject('Page_Student (8)/a_Add course'))
-
-WebUI.click(findTestObject('Page_Course List/button_Add'))
-
-WebUI.verifyElementText(findTestObject('Page_Course List (1)/p_The course 953XXX  Modern E-'), 'The course \'953XXX : Modern E-Sport\' has been added to your course list.')
-
-WebUI.closeBrowser()
 

@@ -4,5 +4,5 @@
    <name>WebProject953323</name>
    <tag></tag>
    <UUID>81137b81-130f-4d9a-ac32-80bb7484ebbc</UUID>
-   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeout>0</pageLoadTimeout>
 </Project>

@@ -30,7 +30,7 @@ WebUI.click(findTestObject('Page_Student Login (4)/input'))
 
 WebUI.click(findTestObject('Page_Student (3)/button_Delete'))
 
-WebUI.click(findTestObject('Page_Student (3)/span_'))
+WebUI.verifyElementText(findTestObject('Page_Student (11)/p_The course 953XXX  Modern E-'), 'The course \'953XXX : Modern E-Sport\' has been deleted from your course list.')
 
 WebUI.closeBrowser()
 

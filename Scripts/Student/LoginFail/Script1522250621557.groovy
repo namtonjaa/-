@@ -28,3 +28,7 @@ WebUI.click(findTestObject('Page_Registeration System (1)/input'))
 
 WebUI.click(findTestObject('Page_Student Login (1)/button_Incorrect Email or pass'))
 
+WebUI.verifyElementText(findTestObject('Page_Student Login (14)/p_Invalid Username or Password'), 'Invalid Username or Password. Please try again.')
+
+WebUI.closeBrowser()
+
