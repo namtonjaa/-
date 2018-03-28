@@ -4,6 +4,7 @@
 <title>Course List</title>
 <link rel="stylesheet" href="../css/LoggedinMain.css">
 <link rel="stylesheet" href="../css/Courselist.css">
+<link rel="stylesheet" href="../css/Modal.css">
 </head>
 <meta charset="UTF-8">
 <body>
@@ -42,7 +43,18 @@
       <td>50</td>
       <td>3</td>
       <td>
-          <button class="button">Add</button>
+        <button id="myBtn" class="button">Add</button>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>The course '953XXX : Modern E-Sport' has been added to your course list.</p>
+        </div>
+
+      </div>
       </td>
     </tr>
 
@@ -54,11 +66,13 @@
       <td>45</td>
       <td>2</td>
       <td>
-          <button class="button">Add</button>
+        <button class="button">Add</button>
       </td>
     </tr>
 
   </div>
 </table>
+<script src="../js/Modal.js">
+</script>
 </body>
 </html>
