@@ -5,6 +5,10 @@
 <link rel="stylesheet" href="../css/LoggedinMain.css">
 <link rel="stylesheet" href="../css/Courselist.css">
 <link rel="stylesheet" href="../css/Modal.css">
+<link rel="stylesheet" href="../css/logout_btn.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/isLoggedin.js"></script>
+<script src="../js/logout.js"></script>
 </head>
 <meta charset="UTF-8">
 <body>
@@ -17,12 +21,16 @@
     <li><a href="StudentMain.html">Main</a></li>
     <li><a href="Courselist.html">Add course</a></li>
     <li><a href="Payment.html">Payment</a></li>
-    <li style="float:right"><a href="../Index.html">Logout</a></li>
+    <li style="float:right"><input type = "button" value = "Logout" id = "logout_btn"</li>
   </ul>
 
   <div class="content">
 
-    <h1>Hello Mr. Nowhere tobe found</h1>
+	<h1 id="fullName"></h1>
+	<script>
+	document.getElementById("fullName").innerHTML = "Welcom " + localStorage.getItem("firstName")+
+	" " + localStorage.getItem("lastName")+ "." ;
+	</script>
     <h2>Enrolled Course</h2>
     <table id = "Courselist">
       <tr>
