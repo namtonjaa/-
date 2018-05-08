@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(function() {
+            if (!checkIfLoggedin()) {
+                window.location = "/test/test.html";
+            }
+            else {
+                console.log(localStorage.getItem("firstName"));
+            }
+        });
+
+        function checkIfLoggedin() {
+            if (localStorage.getItem("isLoggedin")) {
+                return true;
+            }
+            return false;
+        }
+    </script>
+<body>
+    <h1>Hello</h1>
+</body>
+</html>
