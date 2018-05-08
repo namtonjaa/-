@@ -5,8 +5,11 @@
 <link rel="stylesheet" href="../css/LoggedinMain.css">
 <link rel="stylesheet" href="../css/Courselist.css">
 <link rel="stylesheet" href="../css/NavDropDown.css">
+<link rel="stylesheet" href="../css/logout_btn.css">
 <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/isLoggedinTeacher.js"></script>
+<script src="../js/logout.js"></script>
 </head>
 <meta charset="UTF-8">
 <body>
@@ -27,11 +30,15 @@
           </div> -->
       </li>
       <li><a href="Transcript.html">Transcript</a></li>
-      <li style="float:right"><a href="../index.html">Logout</a></li>
+    <li style="float:right"><input type = "button" value = "Logout" id = "logout_btn"</li>
     </ul>
 
   <div style="content">
-    <h1>Wellcome back Mr. Annonymous Newface</h1>
+    <h1 id="fullName"></h1>
+	<script>
+	document.getElementById("fullName").innerHTML = "Welcom " + localStorage.getItem("firstName")+
+	" " + localStorage.getItem("lastName")+ "." ;
+	</script>
     <h2>Teaching course list</h2>
     <table id = "Courselist">
       <tr>

@@ -4,7 +4,8 @@
 <title>Teacher Login</title>
 <link rel="stylesheet" href="../css/LoginStyle.css">
 <link rel="stylesheet" href="../css/Modal.css">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/teacherLogin.js"></script>
 </head>
 <meta charset="UTF-8">
 <body>
@@ -15,12 +16,12 @@
       <h1>Teacher Login</h1>
       <form action="TeacherMain.html">
         <!-- First name:<br> -->
-        <input type="text" name="firstname" value="Email">
+        <input type="text" placeholder="Username" id="username">
         <br><br>
         <!-- Last name:<br> -->
-        <input type="text" name="lastname" value="Password">
+        <input type="password" placeholder="Password" id = "password">
         <br><br>
-        <input type="submit" value="Login">
+        <input type="button" value="Login" id="login_btn">
         </form>
         <button id="myBtn">Incorrect Email or password login</button>
 
@@ -36,8 +37,9 @@
         </div>
               <!-- <button type="button">Login</button> -->
             </div>
-            <script src="../js/Modal.js">
-        </script>
+			    <script src="../js/Modal.js">
+</script>
+
     <!-- </div>
     <div class="column">
       <h1>Picture here</h1>
