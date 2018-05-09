@@ -4,7 +4,8 @@
 <title>Admin Login</title>
 <link rel="stylesheet" href="css/LoginStyle.css">
 <link rel="stylesheet" href="css/Modal.css">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/loginAdmin.js"></script>
 </head>
 <meta charset="UTF-8">
 <body>
@@ -14,12 +15,13 @@
       <h1>Admin Login</h1>
       <form action="Admin/AdminMain.html">
         <!-- First name:<br> -->
-        <input type="text" name="firstname" value="Email">
+        <!-- First name:<br> -->
+        <input type="text" placeholder="Username" id="username">
         <br><br>
         <!-- Last name:<br> -->
-        <input type="text" name="lastname" value="Password">
+        <input type="password" placeholder="Password" id = "password">
         <br><br>
-        <input type="submit" value="Login">
+        <input type="button" value="Login" id="login_btn">
         </form>
         <button id="myBtn">Incorrect Email or password login</button>
 
